@@ -1,0 +1,350 @@
+/* You can add global styles to this file, and also import other style files */
+
+/**************** flex布局类 start *******************/
+/**
+  命名 .f-x{x}-y{y}
+      x后的x参数： l：水平靠左，r：水平靠右，c：水平居中，b：space-between，a：space-around
+      y后的y参数： t：垂直靠上，b：垂直靠下，c：垂直居中，l：baseline 对齐，s：stretch 拉伸至父容器高度
+ */
+
+/** .f-xl-y{y} start */
+.f-xl-yt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .f-xl-yb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .f-xl-yc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .f-xl-yl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .f-xl-ys {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  /** .f-xl-y{y} end */
+
+  /** .f-xr-y{y} start */
+  .f-xr-yt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .f-xr-yb {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .f-xr-yc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .f-xr-yl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .f-xr-ys {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  /** .f-xr-y{y} end */
+
+  /** .f-xc-y{y} start */
+  .f-xc-yt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .f-xc-yb {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .f-xc-yc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f-xc-yl {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .f-xc-ys {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  /** .f-xc-y{y} end */
+
+  /** .f-xb-y{y} start */
+  .f-xb-yt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .f-xb-yb {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .f-xb-yc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .f-xb-yl {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .f-xb-ys {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  /** .f-xb-y{y} end */
+
+  /** .f-xa-y{y} start */
+  .f-xa-yt {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .f-xa-yb {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .f-xa-yc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .f-xa-yl {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .f-xa-ys {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+
+  .column {
+    flex-direction: column;
+  }
+
+  /** .f-xr-y{y} end */
+  /**************** flex布局类 end *******************/
+
+
+  /**************** 多行超出显示 start *******************/
+  .single-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .line-clamp1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .line-clamp2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .line-clamp3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .line-clamp4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+
+  .line-clamp6 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+  }
+
+  /**************** 多行超出显示 start *******************/
+
+
+  /**************** 原生样式重置 start *******************/
+  button {
+    padding: 0 !important;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+
+  button::after {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    font-family: Helvetica;
+  }
+
+  .page {
+    background-color: #0e0b1f;
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  /**************** 原生样式重置 end *******************/
+
+  /**************** 边距 start *******************/
+
+  //上
+
+
+  //右
+
+
+
+  //下
+  .mb-3 {
+    margin-bottom: 3vw;
+  }
+
+
+  //左
+  .ml-6 {
+    margin-left: 6vw;
+  }
+
+
+
+  /**************** 边距 end *******************/
+
+
+
+  /**************** 字体样式 start *******************/
+
+  // @font-face {
+  //   font-family: Helvetica;
+  //   src: url(./assets/Helvetica.ttc);
+  // }
+
+  // 字体颜色
+
+  .fc-act {
+    color: #ef01a0;
+  }
+
+  .fc-ee {
+    color: #eeeeee;
+  }
+
+  .fc-7a {
+    color: #817a7a;
+  }
+
+  .fc-ff {
+    color: #ffffff;
+  }
+
+  .fc-52 {
+    color: #4e4f52;
+  }
+
+  .fc-81 {
+    color: #7a7c81;
+  }
+
+  // 字体大小
+
+  .fs-11 {
+    font-size: 11px;
+  }
+  
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .fs-36 {
+    font-size: 36px;
+  }
+
+  // 字体宽度
+  .bold {
+    font-weight: bold;
+  }
+
+
+
+
+  /**************** 字体样式 end *******************/
+

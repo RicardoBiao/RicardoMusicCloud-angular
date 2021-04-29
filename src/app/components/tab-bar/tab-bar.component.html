@@ -1,0 +1,24 @@
+<div class="f-xa-yc bar" *ngIf="tabShow">
+  <div class="item" (click)="tabChange(0)">
+    <img *ngIf="selectTab != 0" src="/assets/images/HomeIcon.png" alt="">
+    <img *ngIf="selectTab == 0"  src="/assets/images/selectedHomeIcon.png" alt="">
+    <p class="{{selectTab == 0 ? 'active': ''}}"> Home </p>
+  </div>
+  <div class="item" (click)="tabChange(1)">
+    <img *ngIf="selectTab != 1" src="/assets/images/ExploreIcon.png" alt="">
+    <img *ngIf="selectTab == 1" src="/assets/images/selectedExploreIcon.png" alt="">
+    <p class="{{selectTab == 1 ? 'active': ''}}"> Explore </p>
+  </div>
+  <div class="item" (click)="tabChange(2)">
+    <img *ngIf="selectTab != 2" src="/assets/images/RadioIcon.png" alt="">
+    <img *ngIf="selectTab == 2" src="/assets/images/selectedRadioIcon.png" alt="">
+    <p class="{{selectTab == 2 ? 'active': ''}}"> Radio </p>
+  </div>
+  <div class="item" (click)="tabChange(3)">
+    <img *ngIf="selectTab != 3" src="/assets/images/AccountIcon.png" alt="">
+    <img *ngIf="selectTab == 3" src="/assets/images/selectedAccountIcon.png" alt="">
+    <p class="{{selectTab == 3 ? 'active': ''}}"> Account </p>
+  </div>
+</div>
+<div class="bar-rv" *ngIf="tabShow">
+</div>
